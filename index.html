@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chioma Okeke | Portfolio</title>
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 1100px)" href="/css/widescreen.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/44b133bb48.js"></script>
+
+</head>
+
+<body id="home">
+    <!-- navbar -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+    </nav>
+    <!-- header -->
+    <header id="showcase">
+        <div class="showcase-content">
+            <h1 class="i-heading">
+                CHIOMA OKEKE
+            </h1>
+            <p class="paragraph">BACK-END DEVELOPER</p>
+            <a href="#projects" class="btn">See my projects <i class="arrow down"></i></a>
+        </div>
+    </header>
+    <!-- section projects -->
+    <section id="projects" class="works py-1">
+        <div class="container">
+            <h2 class="s-heading text-center"> My Projects</h2>
+            <div class="items">
+                <div class="item">
+                    <a href="https://chiomasignupform.netlify.app" target="_blank"><img src="/images/work2.png" alt="work2"><span class="caption">Registration form <br><a href="https://github.com/chioma28/signupForm.git">Github Link</a></span></a>
+                </div>
+                <div class="item">
+                    <a href="smoothie-queen.netlify.app" target="_blank"><img src="/images/work1.png" alt="work1" class="img2"><span class="caption">Smoothie Website <br><a href="https://github.com/chioma28/smoothie.git">Github Link</a></span></a>
+                </div>
+                <div class="item item3">
+                    <p>WORK IN PROGRESS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section -->
+    <section id="about">
+        <div class="gallery">
+            <h1 class="i-heading">Gallery</h1>
+            <img src="/images/pic1-big.jpg" class="gallery-highlight">
+            <div class="pic-preview">
+                <img src="/images/pic1-small.jpg" class="room-active" alt="">
+                <img src="/images/pic4-small.jpg" alt="">
+                <img src="/images/pic5-small.jpg" alt="">
+                <img src="/images/pic6-small.jpg" alt="">
+            </div>
+        </div>
+        </div>
+        <div class="about-me bg-dark p-2">
+            <h2 class="s-heading">About me</h2>
+            <p>
+                My name is Chioma Vivian Okeke. I am a Nigerian. I graduated with a Bsc. in Computer Science at<br> Nnamdi Azikiwe University, Awka, Anambra State. My stack is Back-end development.
+                <br> <br>
+                <h3 class="skills">Tech Skills</h3>
+                <ul class="skills">
+                    <li> <abbr title="Hyper Text Markup Language"> HTML</abbr></li>
+                    <li> <abbr title="Cascading Style Sheet">CSS</abbr> </li>
+                    <li> <abbr title="Structured Query Language">SQL</abbr> </li>
+                    <li>Oracle</li>
+                </ul>
+            </p>
+
+        </div>
+    </section>
+
+    <script>
+        function imageGallery() {
+            const highlight = document.querySelector('.gallery-highlight');
+            const previews = document.querySelectorAll('.pic-preview img');
+
+            previews.forEach(preview => {
+                preview.addEventListener('click', function() {
+                    const smallSrc = this.src;
+                    const bigSrc = smallSrc.replace('small', 'big');
+                    highlight.src = bigSrc;
+                    previews.forEach(preview => preview.classList.remove('room-active'));
+                    preview.classList.add('room-active');
+
+                });
+            });
+        }
+
+        imageGallery();
+    </script>
+</body>
+
+</html>
