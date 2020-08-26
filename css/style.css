@@ -5,9 +5,17 @@
         padding: 0;
     }
     
-    body {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    s body {
         font-family: 'Roboto' sans-serif;
         line-height: 1.4;
+    }
+    
+    .nav-links:visited {
+        background-color: rgb(21, 138, 99);
     }
     
     a {
@@ -19,7 +27,7 @@
     }
     
     .i-heading {
-        font-size: 4rem;
+        font-size: 3rem;
         margin-bottom: 0.75rem;
         line-height: 1.1;
     }
@@ -50,9 +58,32 @@
         font-size: 1.3rem;
         margin-bottom: 2rem;
     }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        margin: 20px;
+    }
+    
+    .grid-item {
+        font-size: 60px;
+    }
+    
+    .html {
+        background-color: orangered;
+    }
+    
+    .css {
+        background-color: rgb(15, 99, 224);
+    }
+    
+    .data {
+        background-color: grey;
+    }
     /* button */
     
     .btn {
+        margin-top: 30px;
         display: inline-block;
         background-color: turquoise;
         color: whitesmoke;
@@ -195,6 +226,13 @@
     }
     /* about section */
     
+    #about {
+        max-height: 80vh;
+        margin: 5px auto;
+        padding: 0 2 rem;
+        overflow: hidden;
+    }
+    
     #about .about-section {
         background-color: #333;
         color: white;
@@ -301,6 +339,24 @@
     #contact .contact-form textarea {
         width: 90%;
         padding: 0.5rem;
+    }
+    /* testimonial */
+    
+    #testimonial h2 {
+        color: rgb(7, 117, 7);
+    }
+    
+    .testify {
+        display: grid;
+        grid-template-columns: 420px 420px 420px;
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .testify-items {
+        padding: 10px;
+        margin: 15px;
+        border-right: 1px solid grey;
     }
     /* footer */
     
