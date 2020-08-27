@@ -1,0 +1,86 @@
+    .grid-container {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        margin: 10px;
+        padding: 5px;
+        overflow: hidden;
+    }
+    
+    .grid-item {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        overflow: hidden;
+        font-size: 20px;
+    }
+    
+    .container {
+        /* max-width: 1100px; */
+        /* margin: auto; */
+        margin-top: 5px;
+        padding: 0 0.75 rem;
+        overflow: hidden;
+    }
+    
+    .items {
+        display: flex;
+        flex-direction: column;
+        padding: 0.75rem;
+        margin-bottom: 5px;
+    }
+    
+    .item {
+        margin: auto;
+    }
+    
+    #about {
+        max-height: 50vh;
+        margin: 5px auto;
+        padding: 0 2 rem;
+        overflow: hidden;
+    }
+    
+    .testify {
+        display: flex;
+        /* grid-template-rows: 300px 300px 300px; */
+        flex-flow: column wrap;
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .testify-items {
+        padding: 10px;
+        margin: 12px;
+        border-bottom: 1px solid grey;
+    }
+    
+    .twitter {
+        margin: 0 5px;
+        color: white;
+        font-size: 15px;
+    }
+    
+    .instagram {
+        margin: 0 5px;
+        color: white;
+        font-size: 15px;
+    }
+    
+    .linkedin {
+        margin: 0 5px;
+        color: white;
+        font-size: 15px;
+    }
+    
+    .github {
+        margin: 0 5px;
+        color: white;
+        font-size: 15px;
+    }
+    
+    .mail {
+        margin: 0 5px;
+        color: white;
+        font-size: 15px;
+    }
