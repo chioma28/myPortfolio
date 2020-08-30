@@ -10,24 +10,55 @@
     <link rel="stylesheet" media="screen and (min-width: 1100px)" href="/css/widescreen.css">
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/44b133bb48.js"></script>
+    <script src="/js/main.js"></script>
 
 </head>
 
 <body id="home">
     <!-- navbar -->
-    <nav id="navbar">
-        <ul>
-            <!-- <li class="image">
-                <a href="#home"><img src="/images/logo.png" class="nav-image" alt=""></a>
-            </li> -->
+    <nav class="navbar">
+        <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+            </svg>
+          </a>
+        </span>
+
+        <ul id="main-navbar" class="navbar-nav">
             <li><a href="#home" class="nav-links">Home</a></li>
             <li><a href="#projects" class="nav-links">Projects</a></li>
             <li><a href="#about" class="nav-links">About</a></li>
-            <li><a href="#testimonial" class="nav-links">Testimonial</a></li>
             <li><a href="#contact" class="nav-links">Contact</a></li>
-
         </ul>
     </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+
+    <!-- <nav id="navbar">
+        <div class="open-menu">
+            <i class="fa fa-bars"></i>
+        </div>
+        <ul class="main-menu">
+            <li><a href="#home" class="nav-links">Home</a></li>
+            <li><a href="#projects" class="nav-links">Projects</a></li>
+            <li><a href="#about" class="nav-links">About</a></li>
+            <li><a href="#contact" class="nav-links">Contact</a></li>
+            <div class="close-menu">
+                <i class="fa fa-times"></i>
+            </div>
+        </ul>
+
+    </nav> -->
     <!-- header -->
     <header id="showcase">
         <div class="showcase-content">
@@ -35,28 +66,105 @@
                 HI! MY NAME IS CHIOMA OKEKE
             </h1>
             <p class="paragraph">BACK-END DEVELOPER</p>
-            <div class="grid-container">
-                <div class="grid-item"><i class="fab fa-html5 html"></i></div>
-                <div class="grid-item"><i class="fab fa-css3-alt css"></i></div>
-                <div class="grid-item"><i class="fas fa-database data"></i></div>
-            </div>
-            <a href="#projects" class="btn">See my projects <i class="arrow down"></i></a>
+            <a href="#projects" class="btn">See my projects &nbsp;<i class="arrow down"></i></a>
         </div>
     </header>
+    <!-- what i do -->
+    <section id="what-i-do">
+        <h2 class="s-heading text-center"> <br>What I Do</h2>
+        <div class="what">
+            <div class="what-items">
+                <i class="fas fa-laptop-code"></i><br>
+                <h3>Web development</h3> <br>
+                <p>I have good knowledge of HTML,CSS and Javascript to create functional and responsive websites.</p>
+
+            </div>
+            <div class="what-items">
+                <i class="fas fa-database data"></i><br>
+                <h3>Database Administration</h3> <br>
+                <p>Good at manipulating and storing data using SQL commands and oracle.</p>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- testimonial -->
+    <section id="testimonial">
+        <h2 class="s-heading text-center"> <br> <br>Testimonials</h2>
+        <div class="testify">
+            <div class="testify-items">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, rem!</p>
+                <br> <i class="fas fa-user"></i><br>
+                <h5>Anne Mcdonald</h5>
+            </div>
+            <div class="testify-items">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, rem! Lorem, ipsum dolor.</p>
+                <br><i class="fas fa-user-alt"></i><br>
+                <h5>Jane Doe</h5>
+
+            </div>
+            <div class="testify-items">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit. elit. Facilis, rem!</p>
+                <br><i class="fas fa-user-md"></i><br>
+                <h5>Rick Sander</h5>
+            </div>
+        </div>
+    </section>
+    <h2 class="s-heading text-center"> <br> <br>Moments</h2> <br>
+    <section class="mansonry">
+
+        <div class="box">
+            <img src="/images/img1.jpeg" alt="">
+            <h4>TiideLab fellows during the HOH task week 1.</h4>
+        </div>
+        <div class="box">
+            <img src="/images/img2.jpeg" alt="">
+            <h4>TiideLab fellows during the HOH task week 1.</h4>
+        </div>
+        <div class="box">
+            <img src="/images/img3.jpeg" alt="">
+            <h4>TiideLab fellows group photo.</h4>
+        </div>
+        <div class="box">
+            <img src="/images/img4.jpeg" alt="">
+            <h4>Chioma X Samuel</h4>
+        </div>
+        <div class="box">
+            <img src="/images/img5.jpeg" alt="">
+            <h4>Chioma X Aisha</h4>
+        </div>
+        <div class="box">
+            <img src="/images/img6.jpeg" alt="">
+            <h4>Fellows taking photos in the elevator</h4>
+        </div>
+        <div class="box">
+            <img src="/images/img7.jpeg" alt="">
+            <h4>Kachi X Samuel X Ekeso</h4>
+        </div>
+        <div class="box">
+            <img src="/images/img8.jpeg" alt="">
+            <h4>Fellows at the lounge</h4>
+        </div>
+        <div class="box">
+            <img src="/images/img9.jpeg" alt="">
+            <h4>Aisha X Chioma X Jane</h4>
+        </div>
+
+    </section>
+
+
     <!-- section projects -->
 
     <section id="projects" class="works py-1">
         <div class="container">
+            <br>
             <h2 class="s-heading text-center"> My Projects</h2>
             <div class="items">
                 <div class="item">
-                    <a href="https://chiomasignupform.netlify.app" target="_blank"><img src="/images/work2.png" alt="work2"><span class="caption">Registration form <br><a href="https://github.com/chioma28/signupForm.git">Github Link</a></span></a>
+                    <a href="https://chiomasignupform.netlify.app" target="_blank"><img src="/images/work2.png" alt="work2"><span class="caption"> <h3>Registration form</h3> <a href="https://github.com/chioma28/signupForm.git">Github Link</a></span></a>
                 </div>
                 <div class="item">
-                    <a href="smoothie-queen.netlify.app" target="_blank"><img src="/images/work1.png" alt="work1" class="img2"><span class="caption">Smoothie Website <br><a href="https://github.com/chioma28/smoothie.git">Github Link</a></span></a>
-                </div>
-                <div class="item item3">
-                    <p>WORK IN PROGRESS</p>
+                    <a href="https://smoothiequeen.netlify.app/" target="_blank"><img src="/images/work1.png" alt="work1" class="img2"><span class="caption"><h3> Smoothie Website</h3> <a href="https://github.com/chioma28/smoothieQueen.git">Github Link</a></span></a>
                 </div>
             </div>
         </div>
@@ -93,30 +201,10 @@
             </div>
         </div>
     </section>
-    <!-- testimonial -->
-    <section id="testimonial">
-        <h2 class="s-heading text-center"> <br> <br>Testimonials</h2>
-        <div class="testify">
-            <div class="testify-items">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, rem!</p>
-                <br> <i class="fas fa-user"></i><br>
-                <h5>Anne Mcdonald</h5>
-            </div>
-            <div class="testify-items">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, rem! Lorem, ipsum dolor.</p>
-                <br><i class="fas fa-user-alt"></i><br>
-                <h5>Jane Doe</h5>
+    <br> <br>
 
-            </div>
-            <div class="testify-items">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit. elit. Facilis, rem!</p>
-                <br><i class="fas fa-user-md"></i><br>
-                <h5>Rick Sander</h5>
-            </div>
-        </div>
-    </section>
-    <h2 class="s-heading text-center"> Contact </h2>
     <section id="contact">
+        <h2 class="s-heading text-center"> Contact </h2>
         <div class="form-group">
             <p>
                 <h2>Please fill out the form</h2>
@@ -128,6 +216,9 @@
                 </p>
                 <p>
                     <label>Email<br> <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <label>Phone Number<br> <input type="tel" name="phone" /></label>
                 </p>
                 <p>
                     Message<br> <textarea name="message" placeholder="please type your message here" id="message-box" cols="25" rows="7"></textarea>
@@ -148,6 +239,10 @@
         <a href="https://www.linkedin.com/in/chioma-okeke-b305b81a1/" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a>
         <a href="mailto:chiomaokekev@gmail.com" target="_blank"><i class="fas fa-envelope mail"></i></a>
         <a href="https://github.com/chioma28" target="_blank"><i class="fab fa-github github"></i></a>
+        <form name="contact" netlify class="subscribe-form">
+            <input type="email" name="email" placeholder="please enter your email " />
+            <button>Subscribe</button>
+        </form>
     </footer>
     <!--function that handles the gallery highlight. It replaces the small pictures from pic preview to a larger picture on the highlights.  -->
     <script>
