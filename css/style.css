@@ -166,12 +166,12 @@
                 font-size: 36px;
                 margin-left: 50px;
             }
-            
-            @media(max-width: 768px) {
+            /* @media(max-width: 768px) {
                 #main-navbar {
                     display: none;
                 }
             }
+             */
             
             @media(min-width: 768px) {
                 .open-slide {
