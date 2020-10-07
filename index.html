@@ -1,178 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chioma Okeke | Portfolio</title>
-    <link rel="icon" href="images/logo2.png">
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/mobile.css">
-    <link rel="stylesheet" media="screen and (min-width: 1100px)" href="/css/widescreen.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="https://kit.fontawesome.com/44b133bb48.js"></script>
-    <script src="/js/main.js"></script>
-
-</head>
-
-<body id="home">
-    <!-- navbar -->
-    <nav class="navbar">
-        <span class="open-slide">
-          <a href="#" onclick="openSlideMenu()">
-            <svg width="30" height="30">
-                <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
-                <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
-                <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
-            </svg>
-          </a>
-        </span>
-
-        <ul id="main-navbar" class="navbar-nav">
-            <li><a href="#home" class="nav-links">Home</a></li>
-            <li><a href="#projects" class="nav-links">Projects</a></li>
-            <li><a href="#about" class="nav-links">About</a></li>
-            <li><a href="#contact" class="nav-links">Contact</a></li>
-        </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./images/logo3.png">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/bc9f75cc29.js" crossorigin="anonymous"></script>
+      
+        <!-- Style CSS -->
+        <!-- <link rel="stylesheet" href="./css/style.css"> -->
+        <link rel="stylesheet" href="./css/index.css">
+        <!-- <link rel="stylesheet" href="./css/mobile.css"> -->
+        <title>Chioma Okeke | Portfolio</title>
+      
+      </head>
+      
+      <body>
+          <!-- navbar -->
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="#"><img src="./images/logo3.png" alt="Naija Yellow Catalogue Logo"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse"></div>
+              <div class=" nav-flex collapse navbar-collapse" id="navbarNav">
+                  <div class="nav-item-1 mr-auto">
+                      <ul>
+                          <li><a href="#home">Home</a></li>
+                          <li> <a href="#about">About</a></li>
+                          <li><a href="#projects">Projects</a></li>
+                          <li><a href="#gallery">Gallery</a></li>
+                          <li><a href="#contact">Contact</a></li>
+                      </ul>
+                  </div>
+                  </div>
     </nav>
-
-    <div id="side-menu" class="side-nav">
-        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </div>
-
-
-    <!-- <nav id="navbar">
-        <div class="open-menu">
-            <i class="fa fa-bars"></i>
-        </div>
-        <ul class="main-menu">
-            <li><a href="#home" class="nav-links">Home</a></li>
-            <li><a href="#projects" class="nav-links">Projects</a></li>
-            <li><a href="#about" class="nav-links">About</a></li>
-            <li><a href="#contact" class="nav-links">Contact</a></li>
-            <div class="close-menu">
-                <i class="fa fa-times"></i>
-            </div>
-        </ul>
-
-    </nav> -->
-    <!-- header -->
-    <header id="showcase">
+    </header>
+    <!-- landing page -->
+    <section id="home" class="showcase">
         <div class="showcase-content">
             <h1 class="i-heading">
-                HI! MY NAME IS CHIOMA OKEKE
+                CHIOMA OKEKE
             </h1>
             <p class="paragraph">BACK-END DEVELOPER</p>
-            <a href="#projects" class="btn">See my projects &nbsp;<i class="arrow down"></i></a>
-        </div>
-    </header>
-    <!-- what i do -->
-    <section id="what-i-do">
-        <h2 class="s-heading text-center"> <br>What I Do</h2>
-        <div class="what">
-            <div class="what-items">
-                <i class="fas fa-laptop-code"></i><br>
-                <h3>Web development</h3> <br>
-                <p>I have good knowledge of HTML,CSS and Javascript to create functional and responsive websites.</p>
-
-            </div>
-            <div class="what-items">
-                <i class="fas fa-database data"></i><br>
-                <h3>Database Administration</h3> <br>
-                <p>Good at manipulating and storing data using SQL commands and oracle.</p>
-
-            </div>
-
+            <a href="#contact" class="sc-btn" id="btn-1" ><b>Hit me up!</b> &nbsp;</i></a>
+            <a href="./images/Chioma's Resume.pdf" target="#" class="sc-btn" id="btn-2"><b>My Resume</b> &nbsp;</i></a>
+            <a href="#skills" class="sc-btn " id="btn-3"><b>My Skills</b> &nbsp;</i></a>
         </div>
     </section>
+    <!-- about me page -->
+    <section id="about">
+        <h2 class="s-heading "> About Me</h2>
+        <div class="about-section">
+            
+            <div class="gallery">
+                <img src="./images/about.jpeg" class="gallery-img">
+            </div>
+            <div class="about-me ">
+                <p>
+                   My name is Chioma Vivian Okeke. I am a backend developer with good knowledge of combining HTML,CSS and Javascript to
+                   design and develop responsive and appealing websites. <br> I also have an excellent listening, communication and team spirit skill. <br>
+                   I enjoy engaging myself in challenging tasks in other to grow from it and also add value to people around me. <br>
+                   I am currently a fellow at TIIDELab software fellowship.
+                </p>
+
+            </div>
+
+           
+        </div>
+    </section>
+    <!-- what i do --> 
+     <section id="skills">
+        <h2 class="s-heading"> <br>What I Do</h2>
+        <div class="what-items">
+            <p class="w-heading">Technical Skills</p>
+            <div class="tech">
+                <div>
+                    <br><i class="fab fa-html5"></i><br>
+                    <p>HTML</p>
+                </div>
+                <div>
+                    <br><i class="fab fa-css3-alt"></i><br>
+                    <p>CSS</p>
+                </div>
+                <div>
+                    <br><i class="fab fa-js"></i><br>
+                    <p>Javascript</p>
+                </div>
+                <div>
+                    <br><i class="fas fa-database"></i><br>
+                    <p>SQL</p>
+                </div>
+                <div>
+                    <br><i class="fab fa-github"></i><br>
+                    <p>Git & Github</p>
+                </div>
+
+            </div> <br> <br> <br>
+            <p class="w-heading"> Soft Skills</p>
+            <div class="non-tech">
+                <div>
+                    <br><i class="fas fa-square-root-alt"></i><br>
+                    <p>Problem Solving</p>
+                </div>
+                <div>
+                    <br><i class="far fa-question-circle"></i><br>
+                    <p>Critical Thinking</p>
+                </div>
+                <div>
+                    <br><i class="fas fa-microphone-alt"></i><br>
+                    <p>communication</p>
+                </div>
+                <div>
+                    <br><i class="fas fa-balance-scale"></i><br>
+                    <p> Decision Making</p>
+                </div>
+                <div>
+                    <br><i class="fas fa-users"></i><br>
+                    <p>Team Work</p>
+                </div>
+
+            </div>
+            
+        </div>
+    </section> 
     <!-- testimonial -->
-    <section id="testimonial">
-        <h2 class="s-heading text-center"> <br> <br>Testimonials</h2>
+   <section id="testimonial">
+        <h2 class="s-heading"> Testimonials</h2>
         <div class="testify">
             <div class="testify-items">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, rem!</p>
-                <br> <i class="fas fa-user"></i><br>
-                <h5>Anne Mcdonald</h5>
+                 <img src="./images/pic2.jpg" alt=""><br>
+                <p>Chioma is a diligent lady. Puts in effort in all her tasks and delivers on time.</p><br>
+                <h5>~Douglas Agber~</h5>
             </div>
             <div class="testify-items">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, rem! Lorem, ipsum dolor.</p>
-                <br><i class="fas fa-user-alt"></i><br>
-                <h5>Jane Doe</h5>
+                <img src="./images/pic14.jpg" alt=""><br>
+                <p>Chioma is hardworking, ever ready to learn and cordial with her team members.</p><br>
+                <h5>~Kachi Uba~</h5>
 
             </div>
             <div class="testify-items">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit. elit. Facilis, rem!</p>
-                <br><i class="fas fa-user-md"></i><br>
-                <h5>Rick Sander</h5>
+                <img src="./images/pic15.jpg" alt=""><br>
+                <p>Chioma is an innovative young mind, talented and proficient. </p><br>
+                <h5>~Damilola Balogun~</h5>
             </div>
         </div>
     </section>
-    <h2 class="s-heading text-center"> <br> <br>Moments</h2> <br>
-    <section class="mansonry">
+    <!-- section projects -->
 
+    <section id="projects" >
+            <h2 class="s-heading"> My Projects</h2>
+            <div class="items">
+                <div class="item">
+                    
+                    <div class="item-detail">
+                        <img src="/images/work2.png" alt="work2">
+                        <p><h6> <b>Registration form</h6></b><br>
+                         <a href="https://chiomasignupform.netlify.app" target="_blank"><i class="fas fa-globe"></i></a>  &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/chioma28/signupForm.git" target="_blank"><i class="fab fa-github"></i></a>  
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-detail">
+                        <img src="/images/work1.png" alt="work1">
+                        <p><h6><b> SmoothieQueen Website</h6></b><br>
+                         <a href="https://smoothiequeen.netlify.app/" target="_blank"><i class="fas fa-globe"></i></a>  &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/chioma28/smoothieQueen.git" target="_blank"><i class="fab fa-github"></i></a>  
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-detail">
+                        <img src="/images/work3.png" alt="work3">
+                        <p><h6><b>Naija Yellow Catalogue</h6></b><br>
+                        <a href="https://naijayellowcatalogue.netlify.app/index.html/" target="_blank"><i class="fas fa-globe"></i></a>  &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/nazeeeh/Nigeria-yellow-page-directory.git" target="_blank"><i class="fab fa-github"></i></a>  
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section> 
+    
+   
+    <section id="gallery" >
+        <h2 class="s-heading"> <br> <br>Moments</h2> 
+        <div class="mansory">
         <div class="box">
             <img src="/images/img1.jpeg" alt="">
-            <h4>TiideLab fellows during the HOH task week 1.</h4>
         </div>
         <div class="box">
             <img src="/images/img2.jpeg" alt="">
-            <h4>TiideLab fellows during the HOH task week 1.</h4>
         </div>
         <div class="box">
             <img src="/images/img3.jpeg" alt="">
-            <h4>TiideLab fellows group photo.</h4>
         </div>
         <div class="box">
-            <img src="/images/img4.jpeg" alt="">
-            <h4>Chioma X Samuel</h4>
+            <img src="/images/img10.jpeg" alt="">
         </div>
         <div class="box">
-            <img src="/images/img5.jpeg" alt="">
-            <h4>Chioma X Aisha</h4>
+            <img src="/images/img11.jpeg" alt="">
         </div>
         <div class="box">
-            <img src="/images/img6.jpeg" alt="">
-            <h4>Fellows taking photos in the elevator</h4>
+            <img src="/images/img12.jpeg" alt="">
         </div>
         <div class="box">
-            <img src="/images/img7.jpeg" alt="">
-            <h4>Kachi X Samuel X Ekeso</h4>
+            <img src="/images/img13.jpeg" alt="">
         </div>
         <div class="box">
             <img src="/images/img8.jpeg" alt="">
-            <h4>Fellows at the lounge</h4>
         </div>
         <div class="box">
-            <img src="/images/img9.jpeg" alt="">
-            <h4>Aisha X Chioma X Jane</h4>
+            <img src="/images/img14.jpeg" alt="">
+           
         </div>
-
-    </section>
-
-
-    <!-- section projects -->
-
-    <section id="projects" class="works py-1">
-        <div class="container">
-            <br>
-            <h2 class="s-heading text-center"> My Projects</h2>
-            <div class="items">
-                <div class="item">
-                    <a href="https://chiomasignupform.netlify.app" target="_blank"><img src="/images/work2.png" alt="work2"><span class="caption"> <h3>Registration form</h3> <a href="https://github.com/chioma28/signupForm.git">Github Link</a></span></a>
-                </div>
-                <div class="item">
-                    <a href="https://smoothiequeen.netlify.app/" target="_blank"><img src="/images/work1.png" alt="work1" class="img2"><span class="caption"><h3> Smoothie Website</h3> <a href="https://github.com/chioma28/smoothieQueen.git">Github Link</a></span></a>
-                </div>
-            </div>
+        <div class="box">
+            <img src="/images/img15.jpeg" alt="">
+           
         </div>
-    </section>
+        <div class="box">
+            <img src="/images/img16.jpeg" alt="">
+           
+        </div>
+        <div class="box">
+            <img src="/images/img17.jpeg" alt="">
+           
+        </div>
+    </div>
+
+    </section> 
+
+    
     <!-- about section -->
 
-    <section id="about">
-        <h2 class="s-heading text-center"><br> <br>About</h2>
+     <!-- <section id="about">
+        <h2 class="s-heading text-center"><br> <br>About Me</h2>
         <div class="about-section">
             <div class="gallery">
                 <img src="/images/pic1-big.jpg" class="gallery-highlight">
@@ -183,45 +249,29 @@
                     <img src="/images/pic6-small.jpg" alt="">
                 </div>
             </div>
-
-            <div class="about-me bg-dark p-2">
-
-                <p>
-                    My name is Chioma Vivian Okeke. I am a Nigerian. I graduated with a Bsc. in Computer Science at<br> Nnamdi Azikiwe University, Awka, Anambra State. My stack is Back-end development.
-                    <br> <br>
-                    <h3 class="skills">Tech Skills</h3>
-                    <ul class="skills">
-                        <li> <abbr title="Hyper Text Markup Language"> HTML</abbr></li>
-                        <li> <abbr title="Cascading Style Sheet">CSS</abbr> </li>
-                        <li> <abbr title="Structured Query Language">SQL</abbr> </li>
-                        <li>Oracle</li>
-                    </ul>
-                </p>
-
-            </div>
         </div>
     </section>
-    <br> <br>
+    <br> <br> -->
 
     <section id="contact">
-        <h2 class="s-heading text-center"> Contact </h2>
+        <h2 class="s-heading"> Contact </h2>
         <div class="form-group">
             <p>
-                <h2>Please fill out the form</h2>
-            </p>
+                <h5>Want to chat? Send me a message let's discuss!</h5>
+            </p> 
             <!-- newsletter form -->
-            <form name="contact" netlify class="contact-form">
+             <form name="contact" netlify class="contact-form">
                 <p>
-                    <label>Name <br><input type="text" name="name" /></label>
+                    <input type="text" name="name"  placeholder="Full Name"/></label>
                 </p>
                 <p>
-                    <label>Email<br> <input type="email" name="email" /></label>
+                    <input type="email" name="email"  placeholder="Email address"/></label>
                 </p>
                 <p>
-                    <label>Phone Number<br> <input type="tel" name="phone" /></label>
+                   <input type="tel" name="phone"  placeholder="Phone Number"/></label>
                 </p>
                 <p>
-                    Message<br> <textarea name="message" placeholder="please type your message here" id="message-box" cols="25" rows="7"></textarea>
+                   <textarea name="message" placeholder="please type your message here" id="message-box" cols="25" rows="7"></textarea>
                 </p>
                 <p>
                     <button type="submit">Send</button>
@@ -229,23 +279,38 @@
             </form>
         </div>
 
-    </section>
+    </section> 
     <!-- footer -->
-    <footer id="main-footer">
-        <!-- inserting my social media handles using font awesome -->
-        Chioma Okeke 2020 &nbsp;&copy;
-        <a href="https://twitter.com/cheeorhmarh" target="_blank"> <i class="fab fa-twitter twitter"></i></a>
-        <a href="https://www.instagram.com/oma__ok/" target="_blank"> <i class="fab fa-instagram instagram"></i></a>
-        <a href="https://www.linkedin.com/in/chioma-okeke-b305b81a1/" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a>
-        <a href="mailto:chiomaokekev@gmail.com" target="_blank"><i class="fas fa-envelope mail"></i></a>
-        <a href="https://github.com/chioma28" target="_blank"><i class="fab fa-github github"></i></a>
-        <form name="contact" netlify class="subscribe-form">
-            <input type="email" name="email" placeholder="please enter your email " />
-            <button>Subscribe</button>
-        </form>
+    <footer>
+        <div class="footer-container">
+           
+                <div class="newsletter">
+                    <h5><b>Subscribe to my newsletter</b></h5>
+                    <form name="contact" netlify class="subscribe-form">
+                        <input type="email" name="email" placeholder="Email Address " />
+                        <button type="submit" class="subscribe-btn">Subscribe</button>
+                    </form>
+                    
+                </div>
+                     <!-- inserting my social media handles using font awesome -->
+                     <div class="follow-us" >
+                    <span >
+                        <a href="https://twitter.com/cheeorhmarh" target="_blank"> <i class="fab fa-twitter twitter"></i></a>
+                        <a href="https://www.instagram.com/oma__ok/" target="_blank"> <i class="fab fa-instagram instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/chioma-okeke-b305b81a1/" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a>
+                        <a href="mailto:chiomaokekev@gmail.com" target="_blank"><i class="fas fa-envelope mail"></i></a>
+                        <a href="https://github.com/chioma28" target="_blank"><i class="fab fa-github github"></i></a>
+                        </span>
+                    <p> <b> Copyright &copy; 2020 Chioma Okeke </b></p>
+                </div>
+            </div>
+        </div>
     </footer>
+    
+  
+        
     <!--function that handles the gallery highlight. It replaces the small pictures from pic preview to a larger picture on the highlights.  -->
-    <script>
+    <!-- <script>
         function imageGallery() {
             const highlight = document.querySelector('.gallery-highlight');
             const previews = document.querySelectorAll('.pic-preview img');
@@ -263,7 +328,18 @@
         }
 
         imageGallery();
-    </script>
+    </script>  -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+  crossorigin="anonymous"></script>
+
 </body>
 
 </html>
